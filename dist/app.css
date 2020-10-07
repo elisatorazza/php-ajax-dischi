@@ -19,3 +19,23 @@ header div img {
   width: auto;
 }
 
+main {
+  background-color: #1E2D3B;
+}
+
+main section {
+  width: 800px;
+  margin: auto;
+  padding-top: 90px;
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+}
+
+main section div {
+  background-color: #2E3A46;
+  width: 200px;
+  height: 300px;
+  margin: 20px;
+}
+

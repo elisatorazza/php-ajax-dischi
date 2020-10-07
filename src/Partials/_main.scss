@@ -1,0 +1,19 @@
+main {
+  background-color: $mainBackground;
+
+  section {
+    width: 800px;
+    margin: auto;
+    padding-top: 90px;
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+
+    div {
+      background-color: $headerBgAlbum;
+      width: 200px;
+      height: 300px;
+      margin: 20px;
+    }
+  }
+}

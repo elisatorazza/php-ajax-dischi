@@ -1,3 +1,5 @@
+<?php include "db.php" ?>
+
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -10,8 +12,15 @@
       <div class="container">
         <img src="img/logo-spotify.png" alt="Logo Spotify">
       </div>
-      
     </header>
+    <main>
+      <section class="grid">
+        <?php foreach ($database as $album) {?>
+        <div class="album">
 
+        </div>
+        <?php } ?>
+      </section>
+    </main>
   </body>
 </html>
