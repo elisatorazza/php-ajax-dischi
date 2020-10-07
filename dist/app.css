@@ -1,0 +1,21 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+header {
+  height: 80px;
+  background-color: #2E3A46;
+}
+
+header div {
+  max-width: 1000px;
+  margin: auto;
+}
+
+header div img {
+  height: 80px;
+  width: auto;
+}
+
