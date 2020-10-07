@@ -17,7 +17,14 @@
       <section class="grid">
         <?php foreach ($database as $album) {?>
         <div class="album">
-
+          <div class="small-container">
+            <div class="poster">
+              <img src="<?php echo $album["poster"]?>" alt="">
+            </div>
+            <h3 class="title"><?php echo $album["title"] ?></h3>
+            <p class="artist"><?php echo $album["author"] ?></p>
+            <p class= "year"><?php echo $album["year"] ?></p>
+          </div>
         </div>
         <?php } ?>
       </section>

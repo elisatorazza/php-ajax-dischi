@@ -28,14 +28,33 @@ main section {
   margin: auto;
   padding-top: 90px;
   display: flex;
-  justify-content: space-between;
+  justify-content: center;
   flex-wrap: wrap;
 }
 
-main section div {
+div.album {
   background-color: #2E3A46;
-  width: 200px;
-  height: 300px;
-  margin: 20px;
+  text-align: center;
+  margin: 10px;
+}
+
+div.album .small-container {
+  width: 180px;
+  margin: auto;
+  padding: 20px;
+}
+
+div.album img {
+  width: 100%;
+  height: auto;
+}
+
+div.album h3 {
+  color: #fff;
+  text-transform: uppercase;
+}
+
+div.album p {
+  color: #747677;
 }
 
