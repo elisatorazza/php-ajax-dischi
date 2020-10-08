@@ -1,5 +1,3 @@
-<?php include "db.php" ?>
-
 <!DOCTYPE html>
 <html lang="en" dir="ltr">
   <head>
@@ -15,19 +13,24 @@
     </header>
     <main>
       <section class="grid">
-        <?php foreach ($database as $album) {?>
-        <div class="album">
-          <div class="small-container">
-            <div class="poster">
-              <img src="<?php echo $album["poster"]?>" alt="">
-            </div>
-            <h3 class="title"><?php echo $album["title"] ?></h3>
-            <p class="artist"><?php echo $album["author"] ?></p>
-            <p class= "year"><?php echo $album["year"] ?></p>
-          </div>
-        </div>
-        <?php } ?>
+
       </section>
     </main>
+
+    <!-- Template album-->
+    <script id="movie-template" type="text/x-handlebars-template">
+      <div class="album">
+        <div class="small-container">
+          <div class="poster">
+            <img src="" alt="">
+          </div>
+          <h3 class="title"></h3>
+          <p class="artist"></p>
+          <p class= "year"></p>
+        </div>
+      </div>
+    </script>
+
+    <script src="dist/app.js" charset="utf-8"></script>
   </body>
 </html>

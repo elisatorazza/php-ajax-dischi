@@ -17,9 +17,10 @@ div.album {
     h3 {
       color: #fff;
       text-transform: uppercase;
+      padding:20px 0;
     }
     p {
       color: $nameArtistYear;
-
+      font-weight: 500;
     }
 }
