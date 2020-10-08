@@ -16092,7 +16092,34 @@ var $ = __webpack_require__(/*! jquery */ "./node_modules/jquery/dist/jquery.js"
 var Handlebars = __webpack_require__(/*! handlebars */ "./node_modules/handlebars/dist/cjs/handlebars.js");
 
 $(document).ready(function () {
-  alert("");
+  $.ajax({
+    "url": "http://localhost/php-ajax-dischi/api.php",
+    "method": "GET",
+    "success": function success(data) {
+      renderAlbum(data);
+      console.log(data);
+    },
+    "error": function error(err) {
+      alert("Errore");
+    }
+  }); //Funzione render renderAlbum
+
+  function renderAlbum(array) {
+    var source = $("#album-template").html();
+    var template = Handlebars.compile(source);
+
+    for (var i = 0; i < array.length; i++) {
+      console.log(array[i]);
+      var context = {
+        "poster": array[i]["poster"],
+        "title": array[i]["title"],
+        "artist": array[i]["author"],
+        "year": array[i]["year"]
+      };
+      var html = template(context);
+      $(".grid").append(html);
+    }
+  }
 });
 
 /***/ }),

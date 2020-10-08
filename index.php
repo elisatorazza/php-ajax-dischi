@@ -18,15 +18,15 @@
     </main>
 
     <!-- Template album-->
-    <script id="movie-template" type="text/x-handlebars-template">
+    <script id="album-template" type="text/x-handlebars-template">
       <div class="album">
         <div class="small-container">
           <div class="poster">
-            <img src="" alt="">
+            <img src="{{poster}}" alt="Logo album">
           </div>
-          <h3 class="title"></h3>
-          <p class="artist"></p>
-          <p class= "year"></p>
+          <h3 class="title">{{title}}</h3>
+          <p class="artist">{{artist}}</p>
+          <p class= "year">{{year}}</p>
         </div>
       </div>
     </script>
